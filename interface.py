@@ -293,9 +293,10 @@ if __name__ == "__main__":
     }
     # Tạo DataFrame
     df = pd.DataFrame(data)
+    if result_flie == "": 
+        result_flie = "result_file"
     # Lưư kết quả thành file CSV  
     df.to_csv( result_flie + '.csv', index=False, encoding='utf-8')
-    print(result_flie)
    
 
     
